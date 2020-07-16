@@ -93,8 +93,9 @@ namespace JitsiMeetOutlook
 
         private string getLanguage()
         {
-            string[] availableLanguages = ["en", "fr"];
-            string userLanguageInput = Context.Parameters["language"];
+            return "fr";
+            //string[] availableLanguages = ["en", "fr"];
+            /*string userLanguageInput = Context.Parameters["language"];
 
             if (availableLanguages.Contains(userLanguageInput))
             {
@@ -103,7 +104,7 @@ namespace JitsiMeetOutlook
             else
             {
                 return "en";
-            }
+            }*/
             
         }
 

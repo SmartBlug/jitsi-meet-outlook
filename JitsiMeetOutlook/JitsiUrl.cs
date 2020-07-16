@@ -6,10 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json;
 
+// Instantiate random number generator.  
+//private readonly Random _random = new Random();
+
 namespace JitsiMeetOutlook
 {
     public static class JitsiUrl
-
     {
 
         public static string generateUrl()
@@ -19,7 +21,17 @@ namespace JitsiMeetOutlook
 
         public static string generateRoomId()
         {
-            return randomListElement(getAdjectiveList()) + randomListElement(getPluralNounList()) + randomListElement(getVerbList()) + randomListElement(getAdverbList());
+            const int size= 12;
+
+            string reference = "abcdefghijklmnopqrstuvwxyz0123456789";
+            Random randm = new Random();
+            string result = "";
+            for (var i = 0; i < size; i++)
+            {
+                result = result + reference.Substring(randm.Next(0,25), 1);
+            }
+            return result;
+            //return randomListElement(getAdjectiveList()) + randomListElement(getPluralNounList()) + randomListElement(getVerbList()) + randomListElement(getAdverbList());
         }
 
         public static string getUrlBase()
@@ -39,6 +51,7 @@ namespace JitsiMeetOutlook
         {
             int index = random.Next(list.GetArrayLength());
             return list[index].GetString();
+            //return RandomString(4);
         }
 
         private static Random random = new Random();

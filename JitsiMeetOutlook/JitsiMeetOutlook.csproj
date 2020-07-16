@@ -30,10 +30,10 @@
     <DefineConstants>VSTO40</DefineConstants>
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>C:\Users\Fredrik\Desktop\fh\</PublishUrl>
+    <PublishUrl>C:\Users\p.bouffel\Documents\SetupJitsi\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>0.2.0.0</ApplicationVersion>
+    <ApplicationVersion>0.2.0.1</ApplicationVersion>
     <AutoIncrementApplicationRevision>false</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -48,7 +48,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -58,7 +58,7 @@
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft Visual Studio 2010 Tools pour Office Runtime %28x86 et x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
@@ -116,7 +116,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
     <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>0</WarningLevel>
   </PropertyGroup>
   <!--
     This section specifies references for the project.
@@ -278,8 +278,6 @@
       <LastGenOutput>languages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="cert.pfx" />
-    <None Include="JitsiMeetOutlook_TemporaryKey.pfx" />
     <None Include="languages\en.json" />
     <None Include="languages\fr.json" />
     <None Include="packages.config" />
@@ -300,6 +298,40 @@
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="Resources\VideoConf.pdn" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\Jitsi Meet Outlook Add-In.dll.config.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\Jitsi Meet Outlook Add-In.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\Jitsi Meet Outlook Add-In.dll.manifest" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\Jitsi Meet Outlook Add-In.vsto" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\Microsoft.Bcl.AsyncInterfaces.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\Microsoft.Office.Tools.Common.v4.0.Utilities.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\Resources\favicon.ico.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\System.Buffers.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\System.Memory.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\System.Numerics.Vectors.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\System.Runtime.CompilerServices.Unsafe.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\System.Text.Encodings.Web.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\System.Text.Json.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\System.Threading.Tasks.Extensions.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_0\System.ValueTuple.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\Jitsi Meet Outlook Add-In.dll.config.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\Jitsi Meet Outlook Add-In.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\Jitsi Meet Outlook Add-In.dll.manifest" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\Jitsi Meet Outlook Add-In.vsto" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\Microsoft.Bcl.AsyncInterfaces.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\Microsoft.Office.Tools.Common.v4.0.Utilities.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\Resources\favicon.ico.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\System.Buffers.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\System.Memory.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\System.Numerics.Vectors.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\System.Runtime.CompilerServices.Unsafe.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\System.Text.Encodings.Web.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\System.Text.Json.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\System.Threading.Tasks.Extensions.dll.deploy" />
+    <None Include="Setup\Application Files\Jitsi Meet Outlook Add-In_0_2_0_1\System.ValueTuple.dll.deploy" />
+    <None Include="Setup\Jitsi Meet Outlook Add-In.vsto" />
     <None Include="ThisAddIn.Designer.xml">
       <DependentUpon>ThisAddIn.cs</DependentUpon>
     </None>
@@ -309,10 +341,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\jitsiLogo_square.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Resources\favicon.ico" />
+    <Content Include="Setup\setup.exe" />
+    <None Include="Resources\VideoConf.png" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
@@ -323,10 +354,14 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>cert.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>F4E4049A921B2B6BF8CFDC4D45C0F9F37AD041AB</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>382ECFFA934CB8DA585E72D295C84EDC7EA9F8C7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

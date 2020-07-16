@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Domain" Type="System.String" Scope="User">
-      <Value Profile="(Default)">meet.jit.si</Value>
+      <Value Profile="(Default)">meet.monaco-telecom.mc</Value>
     </Setting>
     <Setting Name="requireDisplayName" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>

@@ -25,7 +25,7 @@ namespace JitsiMeetOutlook
 
 
                 // Appointment details
-                newAppointment.Location = "Jitsi Meet";
+                newAppointment.Location = "Video Conference Room";
                 newAppointment.Body = "Join the meeting: " + (JitsiUrl.getUrlBase() + jitsiRoomId);
 
                 // Display ribbon group, then the appointment window

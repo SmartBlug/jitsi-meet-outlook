@@ -59,7 +59,7 @@
             // buttonNewJitsiMeeting
             // 
             this.buttonNewJitsiMeeting.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.buttonNewJitsiMeeting.Image = global::JitsiMeetOutlook.Properties.Resources.jitsiLogo_square;
+            this.buttonNewJitsiMeeting.Image = global::JitsiMeetOutlook.Properties.Resources.Logo;
             this.buttonNewJitsiMeeting.Label = "New Jitsi Meeting";
             this.buttonNewJitsiMeeting.Name = "buttonNewJitsiMeeting";
             this.buttonNewJitsiMeeting.ShowImage = true;
